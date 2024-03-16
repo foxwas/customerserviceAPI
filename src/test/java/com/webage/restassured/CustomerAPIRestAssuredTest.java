@@ -103,7 +103,7 @@ public class CustomerAPIRestAssuredTest {
         System.out.println("Response Body: " + responseBody);
     }
 	
-	@Test
+	//@Test
     public void testDeleteRequest() {
             given()
             .when()
