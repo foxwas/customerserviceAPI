@@ -1,23 +1,23 @@
 node {
-    stage ("Checkout CustomerService"){
+    stage ("Checkout CustomerServiceAPI"){
         git branch: 'main', url: ' https://github.com/foxwas/customerserviceAPI.git'
     }
     
-    stage ("Maven Build - CustomerService") {
+    stage ("Maven Build - CustomerServiceAPI") {
 	
         bat 'mvn compile'
 
     }
     
-    stage ("Package - CustomerService") {
-        bat  'mvn package -DskipTests'
+    stage ("Launch - CustomerServiceAPI") {
+        bat  'mvn sping-boot:run'
     }
     
-    stage ("API Tests- CustomerService") {
+    stage ("API Tests- CustomerServiceAPI") {
         bat  'mvn test'
     }
     
-    stage('User Acceptance Test - CustomerService') {
+    stage('User Acceptance Test - CustomerServiceAPI') {
 	
 	  def response= input message: 'Is this build good to go?',
 	   parameters: [choice(choices: 'Yes\nNo', 
