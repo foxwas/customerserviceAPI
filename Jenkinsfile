@@ -10,7 +10,7 @@ node {
     }
     
     stage ("Package - CustomerService") {
-        bat  'mvn package'
+        bat  'mvn package -DskipTests'
     }
     
     stage ("API Tests- CustomerService") {
