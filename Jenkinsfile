@@ -10,7 +10,7 @@ node {
     }
     
     stage ("Launch - CustomerServiceAPI") {
-        bat  'mvn sping-boot:run'
+        bat  'mvn spring-boot:run'
     }
     
     stage ("API Tests- CustomerServiceAPI") {
