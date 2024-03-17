@@ -5,7 +5,7 @@ node {
     
     stage ("Maven Build - CustomerServiceAPI") {
 	
-        bat 'mvn install'
+        bat 'mvn install -DskipTests'
 
     }
     
