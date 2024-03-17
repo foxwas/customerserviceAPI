@@ -5,12 +5,8 @@ node {
     
     stage ("Maven Build - CustomerServiceAPI") {
 	
-        bat 'mvn compile'
+        bat 'mvn install'
 
-    }
-    
-    stage ("Launch - CustomerServiceAPI") {
-        bat  'mvn spring-boot:run'
     }
     
     stage ("API Tests- CustomerServiceAPI") {
