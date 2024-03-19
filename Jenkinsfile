@@ -28,8 +28,9 @@ node {
 	
 	  if(response=="Yes") {
 
-	    stage('Release- DataService') {
-	     bat 'echo DataService is ready to release!'
+	    stage('Release- Customer Service API') {
+	     bat 'echo Customer Service API is ready to release!'
+		 bat 'echo release team may create a docker container image'
 
 	    }
 	  }
