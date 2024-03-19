@@ -8,6 +8,13 @@ node {
         bat 'mvn install -DskipTests'
 
     }
+	
+	stage ("Launch the App - CustomerServiceAPI") {
+	
+        bat 'start mvn spring-boot:run'
+
+    }
+	
     
     stage ("API Tests- CustomerServiceAPI") {
         bat  'mvn test'
