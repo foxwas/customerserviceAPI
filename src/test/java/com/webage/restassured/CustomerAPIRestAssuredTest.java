@@ -121,6 +121,6 @@ public class CustomerAPIRestAssuredTest {
             .then()
                 .statusCode(200)
                 .body("name", equalTo("steve"))
-                .body("email", equalTo("steve@webage.com"));
+                .body("email", equalTo("steve@accel.com"));
     }
 }
