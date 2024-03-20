@@ -12,7 +12,7 @@ node {
 	stage ("Launch the App - CustomerServiceAPI") {
 	
         bat 'start mvn spring-boot:run'
-		sleep(time: 2, unit: "SECONDS")
+		sleep(time: 10, unit: "SECONDS")
     }
 	
     
