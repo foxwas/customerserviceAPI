@@ -16,7 +16,7 @@ public class CustomerAPIRestAssuredTest {
     }
 
 	
-	//@Test
+	@Test
     public void testGetAPIRequest() {
         given()
             .when()
@@ -25,7 +25,7 @@ public class CustomerAPIRestAssuredTest {
                 .statusCode(200);
     }
 	
-	//@Test
+	@Test
     public void testGetAllCustomersRequest() {
         given()
             .when()
@@ -35,7 +35,7 @@ public class CustomerAPIRestAssuredTest {
         
     }
 	
-	//@Test
+	@Test
     public void testPostRequest() {
         given()
             .contentType("application/json")
@@ -55,7 +55,7 @@ public class CustomerAPIRestAssuredTest {
     }
 	
 	
-	//@Test
+	@Test
     public void testPutRequest() {
         given()
             .contentType("application/json")
@@ -73,7 +73,7 @@ public class CustomerAPIRestAssuredTest {
             .statusCode(200);    
     }
 	
-	//@Test
+	@Test
     public void testStatusCodeHandling() {
         given()
             .when()
@@ -88,7 +88,7 @@ public class CustomerAPIRestAssuredTest {
                 );
     }
 	
-	//@Test
+	@Test
     public void testRetrieveResponseBody() {
         Response response =
             given()
@@ -113,7 +113,7 @@ public class CustomerAPIRestAssuredTest {
             
     }
 	
-	//@Test
+	@Test
     public void testEvaluateJSONContent() {
         given()
             .when()
